@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name random-keyboard-parts)(type Legacy)(uri "C:/PCB/Libs/random-keyboard-parts.pretty-master/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri C:/PCB/Symbols/Type-C.pretty-master/Type-C.lib)(options "")(descr ""))
+  (lib (name Custom_lib)(type Legacy)(uri C:/PCB/Symbols/Custom_lib.lib)(options "")(descr ""))
+  (lib (name modules)(type Legacy)(uri C:/PCB/Libs/KiCAD_libs-master/modules.lib)(options "")(descr ""))
+)
