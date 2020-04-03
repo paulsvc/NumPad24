@@ -136,11 +136,11 @@ $EndComp
 Wire Wire Line
 	2625 1350 2725 1350
 Text GLabel 3350 850  2    50   Input ~ 0
-D+
+USB_DP
 Wire Wire Line
 	3350 850  3225 850 
 Text GLabel 3350 1850 2    50   Input ~ 0
-D-
+USB_DN
 Wire Wire Line
 	3350 1850 3225 1850
 Wire Wire Line
@@ -1382,7 +1382,7 @@ SYS_SWDIO
 Text GLabel 2475 6700 2    50   Input ~ 0
 USB_DP
 Text GLabel 2475 6600 2    50   Input ~ 0
-USB_DM
+USB_DN
 $Comp
 L power:GND #PWR030
 U 1 1 5E92D9E5
@@ -1797,7 +1797,7 @@ Wire Wire Line
 Text GLabel 2475 5700 2    60   Input ~ 0
 row4
 Text GLabel 1175 5100 0    60   Input ~ 0
-row4
+row5
 Text GLabel 1175 6700 0    60   Input ~ 0
 col3
 Text GLabel 1175 6100 0    50   Input ~ 0
@@ -2570,4 +2570,5 @@ NoConn ~ 1175 5700
 NoConn ~ 1175 5600
 NoConn ~ 1175 6300
 NoConn ~ 1175 6400
+NoConn ~ 3775 5050
 $EndSCHEMATC
