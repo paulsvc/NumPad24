@@ -313,18 +313,15 @@ Connection ~ 8925 2025
 Connection ~ 8925 2650
 Connection ~ 8925 3275
 Connection ~ 8925 3875
-Connection ~ 8925 4500
 Connection ~ 9175 1100
 Connection ~ 9175 1725
 Connection ~ 9175 2350
 Connection ~ 9175 2975
-Connection ~ 9175 3575
 Connection ~ 9575 1400
 Connection ~ 9575 2025
 Connection ~ 9575 2650
 Connection ~ 9575 3275
 Connection ~ 9575 3875
-Connection ~ 9575 4500
 Connection ~ 9825 1100
 Connection ~ 9825 1725
 Connection ~ 9825 2350
@@ -335,7 +332,6 @@ Connection ~ 10225 2025
 Connection ~ 10225 2650
 Connection ~ 10225 3275
 Connection ~ 10225 3875
-Connection ~ 10225 4500
 Connection ~ 10475 1100
 Connection ~ 10475 1725
 Connection ~ 10475 2350
@@ -374,10 +370,6 @@ Wire Wire Line
 Wire Wire Line
 	8925 3275 9575 3275
 Wire Wire Line
-	8925 3875 9575 3875
-Wire Wire Line
-	8925 4500 9575 4500
-Wire Wire Line
 	9100 875  9175 875 
 Wire Wire Line
 	9175 875  9175 1100
@@ -390,8 +382,6 @@ Wire Wire Line
 Wire Wire Line
 	9175 2975 9175 3575
 Wire Wire Line
-	9175 3575 9175 4200
-Wire Wire Line
 	9575 1400 10225 1400
 Wire Wire Line
 	9575 2025 10225 2025
@@ -401,8 +391,6 @@ Wire Wire Line
 	9575 3275 10225 3275
 Wire Wire Line
 	9575 3875 10225 3875
-Wire Wire Line
-	9575 4500 10225 4500
 Wire Wire Line
 	9750 875  9825 875 
 Wire Wire Line
@@ -582,17 +570,6 @@ F 1 "D" V 9530 3646 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-123" H 9575 3725 50  0001 C CNN
 F 3 "~" H 9575 3725 50  0001 C CNN
 	1    9575 3725
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D D13
-U 1 1 5E8985D4
-P 9575 4350
-F 0 "D13" V 9620 4271 50  0000 R CNN
-F 1 "D" V 9530 4271 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 9575 4350 50  0001 C CNN
-F 3 "~" H 9575 4350 50  0001 C CNN
-	1    9575 4350
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -846,17 +823,6 @@ F 1 "SW_SPST" H 9375 3718 50  0000 C CNN
 F 2 "MX_Only:MXOnly-1U-NoLED" H 9375 3575 50  0001 C CNN
 F 3 "~" H 9375 3575 50  0001 C CNN
 	1    9375 3575
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW12
-U 1 1 5E898664
-P 9375 4200
-F 0 "SW12" H 9375 4434 50  0000 C CNN
-F 1 "SW_SPST" H 9375 4343 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED" H 9375 4200 50  0001 C CNN
-F 3 "~" H 9375 4200 50  0001 C CNN
-	1    9375 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2571,17 +2537,6 @@ F 3 "~" H 10025 5210 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR047
-U 1 1 5E8D188D
-P 9175 4750
-F 0 "#PWR047" H 9175 4600 50  0001 C CNN
-F 1 "+3.3V" H 9190 4923 50  0000 C CNN
-F 2 "" H 9175 4750 50  0001 C CNN
-F 3 "" H 9175 4750 50  0001 C CNN
-	1    9175 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR048
 U 1 1 5E8D2103
 P 10525 4650
@@ -2621,4 +2576,49 @@ Connection ~ 9650 4750
 Wire Wire Line
 	10125 4650 10525 4650
 NoConn ~ 1175 6300
+Connection ~ 10225 4500
+Connection ~ 9175 3575
+Connection ~ 8925 4500
+Wire Wire Line
+	8925 3875 9575 3875
+$Comp
+L power:+3.3V #PWR047
+U 1 1 5E8D188D
+P 9175 4750
+F 0 "#PWR047" H 9175 4600 50  0001 C CNN
+F 1 "+3.3V" H 9190 4923 50  0000 C CNN
+F 2 "" H 9175 4750 50  0001 C CNN
+F 3 "" H 9175 4750 50  0001 C CNN
+	1    9175 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW12
+U 1 1 5E898664
+P 9375 4200
+F 0 "SW12" H 9375 4434 50  0000 C CNN
+F 1 "SW_SPST" H 9375 4343 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9375 4200 50  0001 C CNN
+F 3 "~" H 9375 4200 50  0001 C CNN
+	1    9375 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 5E8985D4
+P 9575 4350
+F 0 "D13" V 9620 4271 50  0000 R CNN
+F 1 "D" V 9530 4271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9575 4350 50  0001 C CNN
+F 3 "~" H 9575 4350 50  0001 C CNN
+	1    9575 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9575 4500 10225 4500
+Wire Wire Line
+	9175 3575 9175 4200
+Wire Wire Line
+	8925 4500 9575 4500
+Connection ~ 9575 4500
 $EndSCHEMATC
