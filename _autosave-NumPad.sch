@@ -104,7 +104,7 @@ U 1 1 5E84F6A6
 P 3225 1350
 F 0 "D1" V 3500 1750 50  0000 L CNN
 F 1 "PRTR5V0U2X" V 3400 1650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-143" H 3285 1350 50  0001 C CNN
+F 2 "random-keyboard-parts:SOT143B" H 3285 1350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 3285 1350 50  0001 C CNN
 	1    3225 1350
 	0    1    1    0   
@@ -1362,13 +1362,13 @@ F 3 "" H 3525 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3525 3700 2900 3700
-Text GLabel 1175 5300 0    60   Input ~ 0
+Text GLabel 2475 5800 2    60   Input ~ 0
 row0
-Text GLabel 1175 4800 0    60   Input ~ 0
-row1
 Text GLabel 1175 4900 0    60   Input ~ 0
+row1
+Text GLabel 1175 4800 0    60   Input ~ 0
 row2
-Text GLabel 1175 6300 0    60   Input ~ 0
+Text GLabel 1175 5300 0    60   Input ~ 0
 row3
 Text GLabel 2475 5500 2    60   Input ~ 0
 TIM2_CH1
@@ -1448,51 +1448,49 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW26
 U 1 1 5E9524FE
-P 3550 6125
-F 0 "SW26" H 3550 6410 50  0000 C CNN
-F 1 "SW_BUTTON2" H 3550 6319 50  0000 C CNN
-F 2 "keyboard_parts:TactSwitch" H 3550 6325 50  0001 C CNN
-F 3 "~" H 3550 6325 50  0001 C CNN
-	1    3550 6125
+P 3850 6275
+F 0 "SW26" H 3850 6560 50  0000 C CNN
+F 1 "SW_BUTTON2" H 3850 6469 50  0000 C CNN
+F 2 "keyboard_parts:TactSwitch" H 3850 6475 50  0001 C CNN
+F 3 "~" H 3850 6475 50  0001 C CNN
+	1    3850 6275
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR032
 U 1 1 5E953574
-P 3850 6125
-F 0 "#PWR032" H 3850 5875 50  0001 C CNN
-F 1 "GND" H 3855 5952 50  0000 C CNN
-F 2 "" H 3850 6125 50  0001 C CNN
-F 3 "" H 3850 6125 50  0001 C CNN
-	1    3850 6125
+P 4150 6275
+F 0 "#PWR032" H 4150 6025 50  0001 C CNN
+F 1 "GND" H 4155 6102 50  0000 C CNN
+F 2 "" H 4150 6275 50  0001 C CNN
+F 3 "" H 4150 6275 50  0001 C CNN
+	1    4150 6275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 6125 3750 6125
+	4150 6275 4050 6275
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5E95E2CA
-P 3250 5825
-F 0 "#PWR027" H 3250 5675 50  0001 C CNN
-F 1 "+3.3V" H 3265 5998 50  0000 C CNN
-F 2 "" H 3250 5825 50  0001 C CNN
-F 3 "" H 3250 5825 50  0001 C CNN
-	1    3250 5825
+P 3550 5975
+F 0 "#PWR027" H 3550 5825 50  0001 C CNN
+F 1 "+3.3V" H 3565 6148 50  0000 C CNN
+F 2 "" H 3550 5975 50  0001 C CNN
+F 3 "" H 3550 5975 50  0001 C CNN
+	1    3550 5975
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5E95E6BD
-P 3250 5925
-F 0 "R5" H 3100 6025 50  0000 L CNN
-F 1 "10K" H 3050 5925 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3250 5925 50  0001 C CNN
-F 3 "~" H 3250 5925 50  0001 C CNN
-	1    3250 5925
+P 3550 6075
+F 0 "R5" H 3400 6175 50  0000 L CNN
+F 1 "10K" H 3350 6075 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3550 6075 50  0001 C CNN
+F 3 "~" H 3550 6075 50  0001 C CNN
+	1    3550 6075
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2475 5800 2975 5800
 $Comp
 L power:GND #PWR024
 U 1 1 5E98D642
@@ -1705,7 +1703,7 @@ Text GLabel 10025 6375 0    60   Input ~ 0
 POT_SLIDER
 Wire Wire Line
 	10025 6175 10025 6375
-Text GLabel 1175 6700 0    60   Input ~ 0
+Text GLabel 1175 6900 0    60   Input ~ 0
 POT_SLIDER
 $Comp
 L power:+3.3V #PWR043
@@ -1733,11 +1731,11 @@ F 3 "" H 10525 6025 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10525 6025 10175 6025
-Text GLabel 2475 5700 2    60   Input ~ 0
+Text GLabel 1175 5200 0    60   Input ~ 0
 row4
 Text GLabel 1175 5100 0    60   Input ~ 0
 row5
-Text GLabel 1175 5200 0    60   Input ~ 0
+Text GLabel 2475 5700 2    60   Input ~ 0
 col3
 Text GLabel 1175 6100 0    50   Input ~ 0
 SCK
@@ -2480,14 +2478,12 @@ NoConn ~ 1175 5600
 NoConn ~ 1175 6400
 NoConn ~ 12950 150 
 Wire Wire Line
-	2975 6125 3250 6125
+	3275 6275 3550 6275
 Wire Wire Line
-	2975 5800 2975 6125
+	3550 6275 3550 6175
+Connection ~ 3550 6275
 Wire Wire Line
-	3250 6125 3250 6025
-Connection ~ 3250 6125
-Wire Wire Line
-	3250 6125 3350 6125
+	3550 6275 3650 6275
 Wire Wire Line
 	3250 5325 3250 5075
 Wire Wire Line
@@ -2497,8 +2493,6 @@ BUT1
 Wire Wire Line
 	3250 5325 2950 5325
 Connection ~ 3250 5325
-Text GLabel 2475 7000 2    60   Input ~ 0
-BUT1
 $Comp
 L Device:Rotary_Encoder_Switch SW29
 U 1 1 5E8CFD9F
@@ -2540,7 +2534,7 @@ Wire Wire Line
 	9650 4750 9650 4650
 Wire Wire Line
 	9650 4650 9925 4650
-Text GLabel 1175 5800 0    50   Input ~ 0
+Text GLabel 1175 7000 0    50   Input ~ 0
 ENC_SWITCH
 Text GLabel 9650 4925 0    50   Input ~ 0
 ENC_SWITCH
@@ -2616,9 +2610,15 @@ F 3 "" H 8400 6125 50  0001 C CNN
 	1    8400 6125
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1175 6800
-NoConn ~ 1175 6900
-NoConn ~ 1175 7000
 NoConn ~ 2475 6300
 NoConn ~ 1175 5900
+Text GLabel 3275 6275 0    60   Input ~ 0
+BUT2
+Text GLabel 1175 6800 0    60   Input ~ 0
+BUT2
+NoConn ~ 1175 6300
+Text GLabel 1175 6700 0    60   Input ~ 0
+BUT1
+NoConn ~ 2475 7000
+NoConn ~ 1175 5800
 $EndSCHEMATC
