@@ -1100,25 +1100,6 @@ Connection ~ 4600 800
 Wire Wire Line
 	4600 800  4800 800 
 $Comp
-L MCU_ST_STM32F0:STM32F072C8Tx U2
-U 1 1 5E89A0AA
-P 1875 5700
-F 0 "U2" H 1875 5825 50  0000 C CNN
-F 1 "STM32F072C8Tx" H 1875 5675 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 1275 4300 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 1875 5700 50  0001 C CNN
-	1    1875 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1775 4200 1875 4200
-Wire Wire Line
-	1875 4200 1975 4200
-Connection ~ 1875 4200
-Wire Wire Line
-	1975 4200 2075 4200
-Connection ~ 1975 4200
-$Comp
 L power:+3.3V #PWR014
 U 1 1 5E8A60C9
 P 2075 4075
@@ -1131,7 +1112,6 @@ F 3 "" H 2075 4075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2075 4200 2075 4075
-Connection ~ 2075 4200
 $Comp
 L power:GND #PWR012
 U 1 1 5E8A9DB9
@@ -1147,14 +1127,6 @@ Wire Wire Line
 	1500 4000 1675 4000
 Wire Wire Line
 	1675 4000 1675 4200
-Wire Wire Line
-	1675 7200 1775 7200
-Wire Wire Line
-	1975 7200 1875 7200
-Connection ~ 1775 7200
-Connection ~ 1875 7200
-Wire Wire Line
-	1875 7200 1775 7200
 $Comp
 L power:GND #PWR013
 U 1 1 5E8B4C58
@@ -1168,7 +1140,6 @@ F 3 "" H 1675 7300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1675 7200 1675 7300
-Connection ~ 1675 7200
 $Comp
 L Connector:Micro_SD_Card_Det J1
 U 1 1 5E8B9898
@@ -1220,7 +1191,7 @@ NoConn ~ 5000 7275
 NoConn ~ 5000 7475
 Text GLabel 5000 7375 0    50   Input ~ 0
 Detec
-Text GLabel 2475 5900 2    50   Input ~ 0
+Text GLabel 1175 5600 0    50   Input ~ 0
 Detec
 Text GLabel 5000 6675 0    50   Input ~ 0
 SD_CS
@@ -1372,17 +1343,17 @@ Text GLabel 1175 5300 0    60   Input ~ 0
 row3
 Text GLabel 2475 5500 2    60   Input ~ 0
 TIM2_CH1
-Text GLabel 1175 6500 0    60   Input ~ 0
-col0
-Text GLabel 1175 6000 0    60   Input ~ 0
-col1
 Text GLabel 1175 6600 0    60   Input ~ 0
+col0
+Text GLabel 1175 6500 0    60   Input ~ 0
+col1
+Text GLabel 1175 5700 0    60   Input ~ 0
 col2
 Text GLabel 2900 3900 2    50   Input ~ 0
 UART1_TX
 Text GLabel 2475 6400 2    50   Input ~ 0
 UART1_TX
-Text GLabel 2475 6500 2    50   Input ~ 0
+Text GLabel 2475 5900 2    50   Input ~ 0
 LED_DATA_EN
 $Comp
 L power:+3.3V #PWR029
@@ -2473,9 +2444,6 @@ F 3 "" H 7850 1475 50  0001 C CNN
 	1    7850 1475
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1175 5700
-NoConn ~ 1175 5600
-NoConn ~ 1175 6400
 NoConn ~ 12950 150 
 Wire Wire Line
 	3275 6275 3550 6275
@@ -2614,11 +2582,43 @@ NoConn ~ 2475 6300
 NoConn ~ 1175 5900
 Text GLabel 3275 6275 0    60   Input ~ 0
 BUT2
-Text GLabel 1175 6800 0    60   Input ~ 0
+Text GLabel 1175 6400 0    60   Input ~ 0
 BUT2
-NoConn ~ 1175 6300
-Text GLabel 1175 6700 0    60   Input ~ 0
+Text GLabel 1175 6300 0    60   Input ~ 0
 BUT1
-NoConn ~ 2475 7000
 NoConn ~ 1175 5800
+NoConn ~ 1175 6800
+NoConn ~ 1175 6700
+Wire Wire Line
+	1975 4200 2075 4200
+Connection ~ 1975 4200
+Wire Wire Line
+	1875 4200 1975 4200
+Wire Wire Line
+	1775 4200 1875 4200
+Connection ~ 1875 4200
+Wire Wire Line
+	1975 7200 1875 7200
+Connection ~ 1875 7200
+Connection ~ 2075 4200
+Wire Wire Line
+	1875 7200 1775 7200
+Wire Wire Line
+	1675 7200 1775 7200
+Connection ~ 1775 7200
+Connection ~ 1675 7200
+$Comp
+L MCU_ST_STM32F0:STM32F072C8Tx U2
+U 1 1 5E89A0AA
+P 1875 5700
+F 0 "U2" H 1875 5825 50  0000 C CNN
+F 1 "STM32F072C8Tx" H 1875 5675 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 1275 4300 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 1875 5700 50  0001 C CNN
+	1    1875 5700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2475 6500
+NoConn ~ 2475 7000
+NoConn ~ 1175 6000
 $EndSCHEMATC
