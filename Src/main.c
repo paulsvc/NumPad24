@@ -87,7 +87,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+	ssd1306_Init();
 	KeyPad_Init();
 	
   /* USER CODE END Init */
@@ -109,8 +109,8 @@ int main(void)
   MX_IWDG_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-	ssd1306_Init();
-	ssd1306_WriteString("test9", Font_6x8, White);
+	
+	ssd1306_WriteString("test11", Font_6x8, White);
 	ssd1306_UpdateScreen();
 	ssd1306_Fill(Black);
 	HAL_Delay(500);
@@ -131,17 +131,18 @@ int main(void)
 	ssd1306_SetCursor(1,0);
 	ssd1306_WriteString("Scanning...", Font_7x10, White);
 	ssd1306_UpdateScreen();
-	HAL_Delay(500);
-	uint16_t key = KeyPad_WaitForKey(0);
+	HAL_Delay(1000);
+	//uint16_t key = KeyPad_WaitForKey(0);
 	//int key =	KeyPad_Scan();
 	ssd1306_Fill(Black);
 	char str[10];
+	uint16_t key = 2;
 	sprintf(str, "%i", key);
 	ssd1306_SetCursor(1,0);
 	ssd1306_WriteString("Result:", Font_7x10, White);
 	ssd1306_WriteString(str, Font_7x10, White);
 	ssd1306_UpdateScreen();
-	HAL_Delay(500);
+	HAL_Delay(1000);
     /* USER CODE END WHILE */
 	
 		
