@@ -1,0 +1,3 @@
+Changer les empruntes des OLED
+Changer les capas + regulateur
+changer la pin du slider -> encodeur sur pin 29/30

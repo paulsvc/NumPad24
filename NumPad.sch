@@ -1343,11 +1343,11 @@ Text GLabel 1175 5300 0    60   Input ~ 0
 row3
 Text GLabel 2475 5500 2    60   Input ~ 0
 TIM2_CH1
-Text GLabel 1175 6500 0    60   Input ~ 0
-col0
-Text GLabel 1175 6000 0    60   Input ~ 0
-col1
 Text GLabel 1175 6600 0    60   Input ~ 0
+col0
+Text GLabel 1175 6500 0    60   Input ~ 0
+col1
+Text GLabel 1175 5700 0    60   Input ~ 0
 col2
 Text GLabel 2900 3900 2    50   Input ~ 0
 UART1_TX
@@ -2444,7 +2444,6 @@ F 3 "" H 7850 1475 50  0001 C CNN
 	1    7850 1475
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1175 5700
 NoConn ~ 12950 150 
 Wire Wire Line
 	3275 6275 3550 6275
@@ -2621,4 +2620,5 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 $EndComp
 NoConn ~ 2475 6500
 NoConn ~ 2475 7000
+NoConn ~ 1175 6000
 $EndSCHEMATC
